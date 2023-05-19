@@ -13,17 +13,19 @@ __Examples__
     if (seconds % 2) cb(new Error("It's an odd second")); else cb(null, 'OK');
  }
  const retryOddSeconds = retry(oddSeconds);
- retryOddSeconds((err, result){
+ const showResult = (err, result) => {
     if (err) console.log('ERROR: ', err.message);
     else console.log('RESULT: ', result);
- });
+ };
+ retryOddSeconds(showResult);
+ setTimeout(() => retryOddSeconds(showResult), 1000);
  
- /* Output (if called at odd second);
+ /* Output (if started at odd second, should be 1 sec delay between ERROR and RESULT);
  ERROR: It's an odd second
  RESULT: OK
  */
 
-/* Output (if called at even second);
+/* Output (if started at even second);
  RESULT: OK
  */
 

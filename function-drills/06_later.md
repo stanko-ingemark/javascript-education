@@ -15,7 +15,7 @@ const divide = (a,b) => {
 const delayedDivide = later(500, divide);
 const cb = (err, result) => {
     if (err) {
-        console.error('Error: ', e.message);
+        console.error('Error: ', err.message);
     } else {
         console.log('Result: ', result);
     }
