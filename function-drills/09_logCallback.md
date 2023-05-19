@@ -1,4 +1,4 @@
-## 8. logCallback 
+## 9. logCallback 
 
 Write a function _logCallback_ which accepts one argument - a __function__ (_callbackCaller_). 
 _callbackCaller_ receives any number and type of arguments (at least one), but the last one is a __function__ (_callback_).

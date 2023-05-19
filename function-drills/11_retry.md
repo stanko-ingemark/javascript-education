@@ -1,4 +1,4 @@
-## 10. Retry 
+## 11. Retry 
 
 Write a function _retry_ which accepts a single __function__ - _callbackCaller_ as an argument.  _callbackCaller_ accepts _callback_ as the last argument (same setup as previous example).
 

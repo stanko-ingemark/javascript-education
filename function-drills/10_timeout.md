@@ -1,4 +1,4 @@
-## 9. Timeout 
+## 10. Timeout 
 
 Write a function _timeout_ which accepts a single __function__ - _callbackCaller_ as an argument.  _callbackCaller_ accepts _callback_ as the last argument (same setup as previous example).
 
